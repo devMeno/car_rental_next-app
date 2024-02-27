@@ -7,6 +7,8 @@ import { ImagesSlider } from "./components/ui/images-slider";
 import { InfiniteMovingCards } from "./components/ui/infinite-moving-cards";
 import MovingCards from "./components/moving-cards";
 import { Inter } from "next/font/google";
+import { CardHoverEffect } from "./components/car-cards";
+import { FeedbackCarousel } from "./components/feedback-carousel";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -52,10 +54,12 @@ export default function NavbarDemo() {
                     </ImagesSlider>
                 </div>
                 <MovingCards />
-                <div className="text-center pt-[100px] pb-[100px]">
-                    <p>THE CARS</p>
-                    <p className="text-extrabold text-3xl">Our impressive fleet</p>
+                <div className="text-center pt-[100px] pb-[80px]">
+                    <p className="font-semibold">THE CARS</p>
+                    <p className="font-extrabold text-5xl">Our impressive fleet</p>
                 </div>
+                <CardHoverEffect />
+                <FeedbackCarousel />            
             </div>
         </>
     );
