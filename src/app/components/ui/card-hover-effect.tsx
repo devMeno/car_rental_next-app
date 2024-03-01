@@ -1,10 +1,10 @@
-import { cn } from "@/app/utils/cn";
-import { AnimatePresence, motion } from "framer-motion";
+import {cn} from "@/app/utils/cn";
+import {AnimatePresence, motion} from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+import {useState} from "react";
 import Image from "next/image";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGasPump,faUserGroup } from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faGasPump, faUserGroup} from '@fortawesome/free-solid-svg-icons'
 
 
 export const HoverEffect = ({
@@ -42,7 +42,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-[#EBECF7] block  rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -64,7 +64,7 @@ export const HoverEffect = ({
                {/* <CardDescription>{item.title}</CardDescription> */}
                <p className="font-semibold text-xl my-[5px]">{item.title}</p>
                <h1><span className="text-3xl font-bold">{item.price}</span>€/day</h1>
-               <div className="flex justify-between my-[5px] py-[5px] px-[5px] rounded-2xl bg-gray-100">
+               <div className="flex justify-between my-[8px] py-[5px] px-[15px] rounded-2xl bg-gray-50 text-[10px]">
                     <div className="text-center">
                          <FontAwesomeIcon icon={faGasPump} className="w-[30px] h-[30px] text-gray-400" />
                          <p>{item.fuel}</p>
@@ -82,7 +82,7 @@ export const HoverEffect = ({
                          <p>{item.transmission}</p>
                     </div>
                </div>
-               <button className="shadow-[inset_0_0_0_2px_#616467] w-full px-12 py-4 my-2 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white transition duration-200">
+               <button className="shadow-[inset_0_0_0_2px_#616467] w-full px-12 py-4 my-2 rounded-full tracking-widest uppercase font-bold bg-[#03045eff] hover:bg-white hover:text-[#03045eff] text-white transition duration-200">
                     Rent now
                </button>
           </Card>
@@ -102,7 +102,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-[1px] overflow-hidden bg-white border border-transparent group-hover:border-slate-200 relative z-20",
+        "rounded-2xl h-full w-full p-[1px] overflow-hidden bg-gray-100 border border-none group-hover:border-slate-200 relative z-20",
         className
       )}
     >
