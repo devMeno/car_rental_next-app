@@ -9,6 +9,9 @@ import {Inter} from "next/font/google";
 import {CardHoverEffect} from "./components/car-cards";
 import {Steps} from "./components/steps";
 import {FeedbackCarousel} from "@/app/components/feedback-carousel";
+import RollsRoyceBanner from "../app/images/rolls-royce_banner.jpg";
+import BlackCarBanner from "../app/images/black_cars_banner.jpg";
+import MazdaBanner from "../app/images/mazda_banner.jpg"
 
 
 const inter = Inter({
@@ -20,9 +23,9 @@ const inter = Inter({
 export default function NavbarDemo() {
 
     const images = [
-        "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        RollsRoyceBanner.src,
+        BlackCarBanner.src,
+        MazdaBanner.src,
     ];
     return (
         <>

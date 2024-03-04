@@ -1,5 +1,5 @@
-import { HoverEffect } from "./ui/card-hover-effect";
-import CardImage from "../images/tim-meyer-GIm7wxiAZys-unsplash.jpg"
+import {HoverEffect} from "./ui/card-hover-effect";
+import CardImage from "../images/tim-meyer-GIm7wxiAZys-unsplash-removebg-preview.png"
 
 export function CardHoverEffect() {
   return (

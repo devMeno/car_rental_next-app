@@ -1,6 +1,6 @@
 "use client";
-import { CardStack } from "../components/ui/card-stack";
-import { cn } from "@/app/utils/cn";
+import {CardStack} from "../components/ui/card-stack";
+import {cn} from "@/app/utils/cn";
 import Image from "next/image";
 import StepsImage from "../images/steps-image.png"
 
@@ -8,16 +8,16 @@ import StepsImage from "../images/steps-image.png"
 export function Steps() {
   return (
      <>
-          <div className="bg-blue-100">
+          <div className="bg-white">
                <p className="font-bold text-4xl text-center pt-[50px]">How it works</p>
-               <p className="text-center w-[90%] md:w-[55%] justify-center m-auto my-[20px]">Renting a luxury car has never been easier. Our streamlined process makes it simple for you to book and confirm your vehicle of choice online.</p>
+               <p className="text-center text-xl w-[90%] md:w-[55%] justify-center m-auto my-[20px]">Renting a luxury car has never been easier. Our streamlined process makes it simple for you to book and confirm your vehicle of choice online.</p>
                <div className="h-[330px] md:h-[450px] px-[100px] w-full ">
                     <div className="flex items-center">
                          <div className="md:w-1/3 -ml-[10px] md:ml-0">
                               <CardStack items={CARDS} />
                          </div>
                          <div className="md:w-2/3">
-                              <Image src={StepsImage} 
+                              <Image src={StepsImage}
                               className="justify-center m-auto"
                               alt="Steps image"/>
                          </div>

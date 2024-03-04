@@ -1,6 +1,7 @@
 import {Carousel} from 'flowbite-react';
 import Image from "next/image";
-import VisageHomme from "../images/visage_homme.jpg"
+import VisageHomme from "../images/visage_homme.jpg";
+import BgImage from "../images/bg-voiture1.jpg"
 
 export function FeedbackCarousel() {
     return (
@@ -30,8 +31,10 @@ export function FeedbackCarousel() {
                         </div>
                     </div>
                 </div>
-                <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-                    <div className="text-center py-[30px] md:py-[70px] bg-green-200">
+                <div className="flex h-full items-center justify-center dark:bg-gray-700 dark:text-white">
+                    <div className="text-center py-[30px] md:py-[70px] bg-green-200 bg-cover bg-no-repeat backdrop-blur-lg"
+                         style={{backgroundImage: `url(${BgImage.src})`}}
+                    >
                         <p className="font-bold text-gray-400">WHAT OUR CUSTOMERS SAY</p>
                         <p className="font-semibold text-xl md:text-4xl w-[70%] justify-center m-auto my-[15px] md:my-[40px]">&quot;My Drivox experience was nothing short of incredible.The pristine car and impeccable service made my trip unforgottable.I will back for more&quot;</p>
                         <div className="text-center">

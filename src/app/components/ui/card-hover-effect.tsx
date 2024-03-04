@@ -58,7 +58,7 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
                <Image src={item.image} 
-               className="w-full rounded-2xl"
+               className="w-full rounded-2xl bg-white"
                alt="Picture of the author"/>
                {/* <CardTitle>{item.image}</CardTitle> */}
                {/* <CardDescription>{item.title}</CardDescription> */}
@@ -82,7 +82,7 @@ export const HoverEffect = ({
                          <p>{item.transmission}</p>
                     </div>
                </div>
-               <button className="shadow-[inset_0_0_0_2px_#616467] w-full px-12 py-4 my-2 rounded-full tracking-widest uppercase font-bold bg-[#03045eff] hover:bg-white hover:text-[#03045eff] text-white transition duration-200">
+               <button className="shadow-[inset_0_0_0_2px_#616467] w-full px-12 py-4 my-2 rounded-full tracking-widest uppercase border-1 border-black hover:border-[#03045eff] font-bold bg-[#03045eff] hover:bg-white hover:text-[#03045eff] text-white transition duration-200">
                     Rent now
                </button>
           </Card>
